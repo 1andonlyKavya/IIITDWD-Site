@@ -1,0 +1,253 @@
+html, body {
+  /* ensure the available document space is the full height of the viewport */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  /* <-- make the containing element full height */
+}
+
+.header {
+  background-color: #103240;
+}
+
+.logo {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 50px;
+  color: #103240;
+  text-decoration: underline;
+}
+
+.vision-text {
+  text-align: center;
+}
+
+.text {
+  color: #fafafa;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5vw;
+  
+
+}
+
+.home {
+  margin-top: 20px;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .nav-link {}
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #103240;
+  padding: 20px 0px;
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #103240;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.carousel-item {}
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+  .text {
+    font-size: 45px;
+  }
+}
+
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (min-width: 400px)(max-width: 1199.98px) {
+  .text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+/* .navbar{
+  height: 50px;
+} */
+/* The side navigation menu */
+.sidebar {
+  background-color: #103240;
+  position: relative;
+  height: 700px;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: white;
+  color: #103240;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #f7fcff;
+  color: #103240;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  background-color: #fafafa;
+  padding: 100px 50px 100px 50px;
+  font-size: 1.4vw;
+  border: 10px;
+  border-style: groove;
+  border-bottom: 0;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.vision {
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.mission {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.links {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.page-footer {
+  background-color: #0d2833;
+  color: white;
+}
+
+.footer-copyright {
+  background-color: #555;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.page {
+  border-bottom: 1px solid;
+  border-color: white;
+}
+
+.links a:hover {
+  color: #86d1f0;
+  text-decoration: underline;
+}
+
+.icons a {
+  color: white;
+}
+
+.icons a:hover {
+  color: #86d1f0;
+  cursor: auto;
+}
+
+.links-first {
+  margin-top: 0px;
+}
+
+.chairperson-img {
+  float: left;
+  margin-right: 30px;
+}
+
+.sidebar-chairperson {
+  height: 740px;
+}
